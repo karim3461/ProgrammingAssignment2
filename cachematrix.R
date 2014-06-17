@@ -52,7 +52,7 @@ cacheSolve <- function(x, ...) {
   } 
   
   ## Else, returns a matrix that is the inverse of the matrix 'mat' newly passed as argument.
-  mat <- x$get()              ## Gets the input matrix whose inverse we wnat to compute.
+  mat <- x$get()              ## Gets the input matrix whose inverse we want to compute.
   inverse <- solve(mat, ...)  ## The function "solve" does the actual computation of the inverse, 
   x$setinverse(inverse)       ## stores it in the cache "inverse",
   inverse                     ## then returns it.

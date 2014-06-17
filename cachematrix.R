@@ -2,7 +2,7 @@
 ## Matrix inversion being a costly computation, the following 2 functions will 
 ## allow caching the inverse of a matrix rather than computing it repeatedly.
 ##
-## The first function "makecacheMatrix" transforms an input matrix, passed as argument, into a special  
+## The first function "makeCacheMatrix" transforms an input matrix, passed as argument, into a special  
 ## matrix that can store/cache its inverse. This special matrix defines also a list of 4 functions that 
 ## allow repectively to set the input matrix, to retrieve it, to set the inverse of the input matrix,  
 ## and to retrieve it.

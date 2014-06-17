@@ -34,7 +34,7 @@ makeCacheMatrix <- function(x = matrix()) {
   setinverse <- function(new_inverse) inverse <<- new_inverse  ## Assigns the inverse matrix to the variable
                                                                ## "inverse" defined in the parent environment.
   getinverse <- function() inverse                    ## Returns the inverse stored in the variable "inverse".
-  list(set = set, get = get,                          ## Defines the inner list of the 4 functions.
+  list(set = set, get = get,                          ## Defines an inner list of 4 functions.
        setinverse = setinverse,
        getinverse = getinverse)
 }

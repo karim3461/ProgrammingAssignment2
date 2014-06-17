@@ -10,15 +10,16 @@
 ## internal variable that acts as a cache. This is done by invoking the inner functions of the special
 ## matrix created by "makeCacheMatrix".
 
+## HOW TO USE THESE FUNCTIONS:
 ## For example, to compute the inverse of the following matrix:
 ## mat<- matrix(c(4,3,3,2),2,2)
 ## Type the following:
 ## cacheSolve(makeCacheMatrix(mat))
 
 
-## The function "makeCacheMatrix" creates a special "matrix" object that can cache its inverse. It also defines a list
-## of 4 inner functions (to set and get the matrix whose inverse we want to compute, and to set and get
-## the inverse itself).
+## The first function below ("makeCacheMatrix") creates a special "matrix" object that can cache its inverse. 
+## It also defines a list of 4 inner functions (to set and get the matrix whose inverse we want to compute, 
+## and to set and get the inverse itself).
 
 makeCacheMatrix <- function(x = matrix()) {
   inverse <- NULL       ## initializes the inverse matrix to NULL. Here "inverse" is the name of 
@@ -40,7 +41,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## The function "cacheSolve" computes the inverse of the special "matrix" returned by makeCacheMatrix above
+## The function below ("cacheSolve") computes the inverse of the special "matrix" returned by makeCacheMatrix 
+## defined above.
 
 cacheSolve <- function(x, ...) {
   inverse <- x$getinverse()   ## Gets the inverse stored in the cache.

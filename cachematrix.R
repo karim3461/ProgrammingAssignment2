@@ -16,7 +16,7 @@
 ## cacheSolve(makeCacheMatrix(mat))
 
 
-## This second function creates a special "matrix" object that can cache its inverse. It also defines a list
+## The function "makeCacheMatrix" creates a special "matrix" object that can cache its inverse. It also defines a list
 ## of 4 inner functions (to set and get the matrix whose inverse we want to compute, and to set and get
 ## the inverse itself).
 

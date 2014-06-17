@@ -8,7 +8,7 @@
 ## and to retrieve it.
 ## The second function "cacheSolve" computes the actual inverse of the input matrix and stores it in an 
 ## internal variable that acts as a cache. This is done by invoking the inner functions of the special
-## matrix created by "makecacheMatrix".
+## matrix created by "makeCacheMatrix".
 
 ## For example, to compute the inverse of the following matrix:
 ## mat<- matrix(c(4,3,3,2),2,2)

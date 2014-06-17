@@ -4,7 +4,7 @@
 ##
 ## The first function "makeCacheMatrix" transforms an input matrix, passed as argument, into a special  
 ## matrix that can store/cache its inverse. This special matrix defines also a list of 4 functions that 
-## allow repectively to set the input matrix, to retrieve it, to set the inverse of the input matrix,  
+## allow respectively to set the input matrix, to retrieve it, to set the inverse of the input matrix,  
 ## and to retrieve it.
 ## The second fucntion "cacheSolve" computes the actual inverse of the input matrix and stores it in an 
 ## internal variable that acts as a cache. This is done by invoking the inner functions of the special
